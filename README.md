@@ -26,19 +26,16 @@
 <pre><code>python main.py path/to/image.jpg</code></pre>
 
 <p>Replace <code>path/to/image.jpg</code> with the path to the image you want to analyze.</p>
-
+<h1>evaluation</h1>h1>
                 <h3>Confusion Matrix</h3>
                 <img src="/images/confusion_matrix.png" alt="Confusion Matrix">
   
-        
-                <h3>F1 Curve</h3>
+   <h3>F1 Curve</h3>
                 <img src="/images/F1_curve.png" alt="F1 Curve">
         
-  
-                <h3>P Curve</h3>
+<h3>P Curve</h3>
                 <img src="/images/P_curve.png" alt="P Curve">
-    
-                <h3>R Curve</h3>
+  <h3>R Curve</h3>
                 <img src="/images/R_curve.png" alt="R Curve">
 
 <h2>Examples</h2>
