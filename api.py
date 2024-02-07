@@ -42,7 +42,7 @@ def process_url_image(url):
     else:
         return None
 
-@app.route('/detect', methods=['POST'])
+@api.route('/detect', methods=['POST'])
 def detect_objects():
     if 'file' in request.files:
         # File upload scenario
