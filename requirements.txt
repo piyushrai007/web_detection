@@ -50,7 +50,7 @@ PyQt5-Qt5==5.15.2
 PyQt5-sip==12.13.0
 python-dateutil==2.8.2
 pytz==2024.1
-pywin32==306
+pywin32==3.06
 PyYAML==6.0.1
 pyzmq==25.1.2
 requests==2.31.0
