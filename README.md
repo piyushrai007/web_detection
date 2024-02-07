@@ -13,7 +13,7 @@
   </li>
   <li><strong>Pretrained Model</strong>:
     <ul>
-      <li>Download the pretrained YOLOv8 model (<code>best.pt</code>) from <a href="link-to-pretrained-model">here</a>.</li>
+      <li>Download the pretrained YOLOv8 model (<code>best.pt</code>) from <a href="https://drive.google.com/file/d/10JV_N9P0s22eTpa-bJ7UkHVsrqXhUm2c/view?usp=sharing">here</a>.</li>
       <li>Place the <code>best.pt</code> file in the project directory.</li>
     </ul>
   </li>
