@@ -7,7 +7,12 @@ import io
 import requests
 import base64
 
-app = Flask(__name__)
+from flask import Flask
+
+api = Flask(__name__)
+
+# Define routes and other Flask configurations here
+
 CORS(app)
 
 # Load a pretrained YOLOv8 model
