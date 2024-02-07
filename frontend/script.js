@@ -6,7 +6,7 @@ function detectObjects() {
     formData.append('file', file);
 
     $.ajax({
-        url: 'http://127.0.0.1:5000/detect',
+        url: 'https://web-detection.onrender.com',
         type: 'POST',
         data: formData,
         processData: false,
