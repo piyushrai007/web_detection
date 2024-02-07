@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Model Details</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    
+<body>
+    <header>
+        <div class="circle-profile">
+            <img src="frontend/images/329155ec-46d4-46cd-80f5-33674ed4bc63.jpg" alt="Profile Picture">
+        </div>
+        <h1>Web Object Detection-piyush-rai</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/piyush-rai-3b8714226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/piyushrai007" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="modelDetails">
+            <h2>Model Details</h2>
+            <div>
+                <p><strong>Model Architecture</strong></p>
+                <p>🏗️ Model: YOLOv8</p>
+                <p>🛠️ Framework: Ultralytics</p>
+                <p>🔨 Backbone: Darknet</p>
+            </div>
+
+        <div>
+            <h2>Dataset</h2>
+            <div>
+                <p><strong>Dataset Statistics</strong></p>
+                <p>📊 Total Images: 1685</p>
+                <p>📷 Source: Roboflow</p>
+                <p>🖍️ Annotation Tool: LabelImg</p>
+                <p>✏️ Custom Annotations: Yes</p>
+            </div>
+        </div>
+        <div>
+            <h2>Dataset Preparation</h2>
+            <div>
+                <p><strong>Preparation Process</strong></p>
+                <p>📦 The dataset comprises 1685 images collected from various sources, primarily from Roboflow.</p>
+                <p>🖋️ Annotations were created using LabelImg, a popular open-source graphical image annotation tool.</p>
+                <p>🖼️ LabelImg allows users to draw bounding boxes around objects in images and generate annotations in XML format.</p>
+                <p>🔍 These annotations provide information about the location and class of objects within the images, essential for training object detection models.</p>
+                <p>🔖 In addition to the dataset sourced from Roboflow, custom annotations were created for specific objects relevant to our web element detection task.</p>
+                <p>🏷️ Custom annotations provide finer-grained labeling, improving the model's ability to detect specific objects of interest accurately.</p>
+                <p>🔍 LabelImg facilitated the creation of custom annotations by allowing us to define and label objects manually.</p>
+                <p>✔️ Each annotation was meticulously verified to ensure accuracy and consistency across the dataset.</p>
+            </div>
+        </div>
+
+        <div>
+            <h2>Training Process</h2>
+            <div>
+                <p><strong>Training Approach</strong></p>
+                <p>🚀 The YOLOv8 model was trained using the annotated dataset, leveraging the powerful training capabilities of Ultralytics.</p>
+                <p>🔄 The training process involved multiple iterations, fine-tuning model parameters, and optimizing performance metrics.</p>
+                <p>📈 Various techniques, including data augmentation and transfer learning, were employed to enhance model generalization and robustness.</p>
+                <p>💻 Training was conducted on high-performance GPUs to expedite convergence and achieve optimal results efficiently.</p>
+            </div>
+        </div>
+
+        <div>
+            <h2>Performance Evaluation</h2>
+            <div>
+                <p><strong>Evaluation Metrics</strong></p>
+                <p>🔍 The trained model's performance was evaluated using standard evaluation metrics, including precision, recall, and mean average precision (mAP).</p>
+                <p>📝 Evaluation was performed on a separate validation dataset to assess the model's generalization ability and identify areas for improvement.</p>
+                <p>📊 Performance metrics were analyzed iteratively, guiding further refinements to the model architecture and training pipeline.</p>
+            </div>
+        </div>
+
+        <div>
+            <h2>Conclusion</h2>
+            <div>
+                <p><strong>Final Thoughts</strong></p>
+                <p>🎉 The YOLOv8 model, trained on a dataset of 1685 images, demonstrates promising results in web element detection tasks.</p>
+                <p>🔍 Custom annotations and meticulous dataset preparation contribute to the model's accuracy and robustness in identifying objects of interest.</p>
+                <p>🔧 Ongoing optimization efforts aim to further enhance the model's performance and address specific use-case requirements.</p>
+            </div>
+        </div>
+        </section>
+        <section id="modelTesting">
+            <h2>Model Testing</h2>
+            <form id="uploadForm" enctype="multipart/form-data" action="http://127.0.0.1:5000/detect" method="post">
+                <input type="file" id="fileInput" name="file">
+                <button type="button" onclick="detectObjects()">Detect Objects</button>
+            </form>
+            <button id="refreshButton" type="button" onclick="location.reload()">X</button> <!-- Refresh button -->
+            <div id="result">
+                <img id="detectedImage" src="" alt="Detected Image">
+                <a id="downloadLink" class="download-btn" href="#" download="detected_image.jpg">Download Image</a>
+            </div>
+        </section>
+    
+        <section id ="evaluation">
+            <div class="metric">
+                <h3>Confusion Matrix</h3>
+                <img src="val/confusion_matrix.png" alt="Confusion Matrix">
+            </div>
+            <div class="metric">
+                <h3>F1 Curve</h3>
+                <img src="/val/F1_curve.png" alt="F1 Curve">
+            </div>
+            <div class="metric">
+                <h3>P Curve</h3>
+                <img src="/val/P_curve.png" alt="P Curve">
+            </div>
+            <div class="metric">
+                <h3>R Curve</h3>
+                <img src="/val/R_curve.png" alt="R Curve">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created by Piyush</p>
+    </footer>
+
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+</body>
+</html>
