@@ -13,7 +13,7 @@ api = Flask(__name__)
 
 # Define routes and other Flask configurations here
 
-CORS(app)
+CORS(api)
 
 # Load a pretrained YOLOv8 model
 model = YOLO('best.pt') # pretrained YOLOv8n model
@@ -71,4 +71,4 @@ def detect_objects():
         return jsonify({'error': 'No file or URL provided'})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    api.run(debug=True)
