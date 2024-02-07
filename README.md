@@ -23,7 +23,7 @@
 
 <p>To use the YOLOv8 model for object detection, run the following command:</p>
 
-<pre><code>python detect.py path/to/image.jpg</code></pre>
+<pre><code>python main.py path/to/image.jpg</code></pre>
 
 <p>Replace <code>path/to/image.jpg</code> with the path to the image you want to analyze.</p>
 
