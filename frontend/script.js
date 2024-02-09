@@ -6,7 +6,7 @@ function detectObjects() {
     formData.append('file', file);
 
     $.ajax({
-        url: 'https://web-detection.onrender.com/detect',
+        url: 'https://verbose-capybara-gj6p4wrxjj92pw65-5000.app.github.dev/detect',
         type: 'POST',
         data: formData,
         processData: false,

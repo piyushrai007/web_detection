@@ -71,3 +71,5 @@ def detect_objects():
         return jsonify({'error': 'No file or URL provided'})
 
 
+if __name__ == '__main__':
+    api.run(debug=True)
