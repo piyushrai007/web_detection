@@ -4,5 +4,5 @@ numpy
 Pillow
 requests
 ultralytics
-
+opencv-python==4.5.5.64
 gunicorn==20.1.0
